@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
+
 function Policies() {
   return (
     <Fragment>
@@ -7,6 +8,9 @@ function Policies() {
       <ul>
         <li>
           <Link href="/policies/hey">Policy holder</Link>
+        </li>
+        <li>
+          <Link href="/policies/NewPolicy">New policy</Link>
         </li>
       </ul>
     </Fragment>

@@ -40,6 +40,15 @@ module.exports = {
       pink: {
         primary: '#DB2777',
       },
+      indigo: {
+        600: '#4F46E5',
+      },
+      sky: {
+        400: '#38BDF8',
+        500: '#0EA5E9',
+        600: '#0284C7',
+        700: '#00c7f7',
+      },
     },
     extend: {
       animation: {
