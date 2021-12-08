@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen">
       <Head>
         <title>Long Life Funeral</title>
         <link rel="icon" href="/longlifelogo.png" />
