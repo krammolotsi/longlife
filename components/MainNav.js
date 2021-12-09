@@ -3,7 +3,7 @@ function MainNav() {
   return (
     <div className="flex md:flex-col items-center justify-center h-full space-x-4 md:space-x-0 md:space-x-0 md:space-y-4 py-4">
       <Link href="/policy">
-        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl bg-white text-blue-primary transform  md:translate-x-8 duration-300 shadow-xl">
+        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl bg-white text-sky-400 transform  md:translate-x-8 duration-300 shadow-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -16,7 +16,7 @@ function MainNav() {
         </a>
       </Link>
       <Link href="/policies">
-        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white opacity-50 hover:bg-white hover:opacity-100 hover:text-blue-primary transform md:hover:translate-x-8 duration-300 hover:shadow-xl">
+        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white hover:bg-white hover:opacity-100 hover:text-sky-400 transform md:hover:translate-x-8 duration-300 hover:shadow-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -29,7 +29,7 @@ function MainNav() {
         </a>
       </Link>
       <Link href="/policy">
-        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white opacity-50 hover:bg-white hover:opacity-100 hover:text-blue-primary transform  md:hover:translate-x-8 duration-300 hover:shadow-xl">
+        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white hover:bg-white hover:opacity-100 hover:text-sky-400 transform  md:hover:translate-x-8 duration-300 hover:shadow-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -45,7 +45,7 @@ function MainNav() {
         </a>
       </Link>
       <Link href="/policy">
-        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white opacity-50 hover:bg-white hover:opacity-100 hover:text-blue-primary transform  md:hover:translate-x-8 duration-300 hover:shadow-xl">
+        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white hover:bg-white hover:opacity-100 hover:text-sky-400 transform  md:hover:translate-x-8 duration-300 hover:shadow-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"

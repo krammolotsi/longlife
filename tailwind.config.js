@@ -49,6 +49,10 @@ module.exports = {
         600: '#0284C7',
         700: '#00c7f7',
       },
+      orange: {
+        primary: '#F97316',
+        dark: '#EA580C',
+      },
     },
     extend: {
       animation: {
