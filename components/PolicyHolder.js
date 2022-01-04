@@ -1,48 +1,36 @@
 import { PlusCircleIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
+import { Fragment } from 'react';
 function PolicyHolder(props) {
   return (
-    <div className="flex flex-wrap place-items-center h-screen">
-      {/* <!-- card --> */}
-      <div className="shadow-lg rounded-xl w-72 md:w-96 p-4 bg-gray-light relative overflow-hidden">
-        <a href="#" className="w-full h-full block">
-          <div className="flex items-center border-b-2 mb-2 py-2">
-            <img
-              className="w-10 h-10 object-cover rounded-full"
-              alt="User avatar"
-              src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200"
-            />
-
-            <div className="pl-3">
-              <div className="font-medium">Jessica White</div>
-              <div className="text-gray-600 text-sm">
-                Sr. Forntend Developer
-              </div>
-            </div>
-          </div>
-          <div className="w-full">
-            <p className="text-gray-800 text-sm font-medium mb-2">
-              Working On:
-            </p>
-            <p className="text-gray-800 text-xl font-medium mb-2">
-              Improve css design of the carousel
-            </p>
-            <p className="text-blue-600 text-xs font-medium mb-2">
-              Due: Sunday, 23 August
-            </p>
-            <p className="text-gray-400 text-sm mb-4">
-              You’ve been coding for a while now and know your way around...
-            </p>
-          </div>
-          <div className="flex items-center justify-between my-2">
-            <p className="text-gray-300 text-sm">4/6 task completed</p>
-          </div>
-          <div className="w-full h-2 bg-blue-200 rounded-full">
-            <div className="w-4/4 h-full text-center text-xs text-white bg-blue-primary rounded-full"></div>
-          </div>
-        </a>
+    <Fragment>
+      <div class="max-w-xs mx-4 space-x-1 space-y-1 m-2 mb-2 rounded-lg shadow-lg bg-gray-light">
+        <div className="px-6 py-4">
+          <h4 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
+            {props.name}
+          </h4>
+          <p className="leading-normal truncate text-gray-dark">
+            {props.address}
+          </p>
+          <p className="leading-normal truncate text-gray-dark">
+            {props.premium}
+          </p>
+          <p className="leading-normal truncate text-gray-dark">
+            {props.idNum}
+          </p>
+        </div>
+        <div className="block bg-gray-light text-center p-2">
+          <Link href="/policies/hey">
+            <button
+              type="suubmit"
+              className="bg-sky-400 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out hover:bg-orange-primary transform hover:-translate-x hover:scale-105"
+            >
+              More Info
+            </button>
+          </Link>
+        </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
 

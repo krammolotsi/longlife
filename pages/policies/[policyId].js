@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import { Fragment } from 'react';
-import PolicyHolder from '../../components/PolicyHolder';
+import Head from 'next/head';
+import Layout from '../../components/Layout';
 function PolicyPage() {
   //get access to router object containing values from the url
   const router = useRouter();
@@ -8,12 +8,13 @@ function PolicyPage() {
   const policyID = router.query.policyId;
   console.log(policyID);
   return (
-    <Fragment>
-      <div>i am policy page</div>
-      <div>
-        <PolicyHolder />
-      </div>
-    </Fragment>
+    <div className="h-screen">
+      <Head>
+        <title>Long Life Funeral</title>
+        <link rel="icon" href="/longlifelogo.png" />
+      </Head>
+      <Layout children={<div>i am policy holder page</div>} />
+    </div>
   );
 }
 

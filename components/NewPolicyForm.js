@@ -37,11 +37,11 @@ function NewPolicyForm(props) {
     props.onAddPolicy(policyData);
   }
   return (
-    <div className="font-sans">
+    <div className="font-sans overflow-hidden">
       <div className="relative min-h-screen flex flex-col sm:justify-center items-center bg-gray-100 ">
         <div className="relative sm:max-w-sm w-full">
-          <div className="card bg-blue-primary shadow-lg  w-full h-full rounded-3xl absolute animate-rotate"></div>
-          <div className="card bg-red-primary shadow-lg  w-full h-full rounded-3xl absolute  animate-rotate_neg"></div>
+          <div className="card bg-sky-400 shadow-lg  w-full h-full rounded-3xl absolute animate-rotate"></div>
+          <div className="card bg-orange-primary shadow-lg  w-full h-full rounded-3xl absolute  animate-rotate_neg"></div>
           <div className="relative w-full rounded-3xl  px-6 py-4 bg-gray-light shadow-md">
             <label
               for=""

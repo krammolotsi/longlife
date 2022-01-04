@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import Header from '../components/Header';
+import InfoSlider from '../components/InfoSlider';
 // import Image from 'next/image';
 import Layout from '../components/Layout';
+import PolicyList from '../components/PolicyList';
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
         <title>Long Life Funeral</title>
         <link rel="icon" href="/longlifelogo.png" />
       </Head>
-      <Layout />
+      <Layout children={<PolicyList />} infoSlider={<InfoSlider />} />
 
       {/* business progress for the monthly */}
 
