@@ -19,6 +19,12 @@ module.exports = {
         primary: '#6B7280',
         light: '#E5E7EB',
         dark: '#374151',
+        100: '#f1f5f9',
+        200: '#e2e8f0',
+        300: '#cbd5e1',
+        500: '#64748b',
+        600: '#475569',
+        800: '#1e293b',
       },
       red: {
         primary: '#DC2626',
@@ -39,6 +45,12 @@ module.exports = {
       },
       pink: {
         primary: '#DB2777',
+        100: '#fce7f3',
+        200: '#fbcfe8',
+        300: '#f9a8d4',
+        500: '#ec4899',
+        600: '#db2777',
+        800: '#9d174d',
       },
       indigo: {
         600: '#4F46E5',

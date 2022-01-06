@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 function PolicyHolder(props) {
   return (
     <Fragment>
-      <div class="max-w-xs mx-4 space-x-1 space-y-1 m-2 mb-2 rounded-lg shadow-lg bg-gray-light">
+      <div className="max-w-xs mx-4 space-x-1 space-y-1 m-2 mb-2 rounded-lg shadow-lg bg-gray-light">
         <div className="px-6 py-4">
           <h4 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
             {props.name}

@@ -3,7 +3,8 @@ import Image from 'next/image';
 import logo from '../public/longlifelogo.png';
 import Link from 'next/link';
 import { useState } from 'react';
-function Tools() {
+import { signOut } from 'next-auth/react';
+function Tools(props) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -39,7 +40,7 @@ function Tools() {
               </a>
             </Link>
           </div>
-          <div class="flex items-center space-x-4">
+          <div className="flex items-center space-x-4">
             {/* alert bell */}
             <Link href="/policy">
               <a className="flex items-center justify-center w-10 h-10 text-sky-400 hover:text-gray-700 relative">
@@ -64,7 +65,7 @@ function Tools() {
                 className="w-10 h-10 rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400 focus:ring-offset-white"
               >
                 <img
-                  src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg"
+                  src={props.session}
                   alt=""
                   className="w-10 h-10 object-cover"
                 />
@@ -108,11 +109,16 @@ function Tools() {
                       Settings
                     </a>
                   </Link>
-                  <Link href="/policy">
+                  {/* <Link href="/policy">
                     <a className="block px-4 py-2 text-sm text-gray-dark hover:bg-blue-light">
                       Logout
-                    </a>
-                  </Link>
+                    </a> </Link> */}
+                  <button
+                    className="block px-4 py-2 text-sm text-gray-dark hover:bg-blue-light"
+                    onClick={signOut}
+                  >
+                    Logout
+                  </button>
                 </div>
               </div>
             </div>
