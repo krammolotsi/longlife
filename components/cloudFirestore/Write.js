@@ -5,9 +5,12 @@ export default function WriteToCloudFirestore() {
   const sendData = async () => {
     try {
       const docRef = await addDoc(collection(db, 'clients'), {
-        first: 'Micky Steve',
-        last: 'Mouse',
-        born: 1010,
+        name: 'Micky Steve',
+        surname: 'Mouse',
+        idNum: 1010,
+        policyNumber: '111',
+        premium: '',
+        contact: '',
       });
       console.log('Document written with ID: ', docRef.id);
     } catch (e) {

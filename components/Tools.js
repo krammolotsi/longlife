@@ -42,7 +42,7 @@ function Tools(props) {
           </div>
           <div className="flex items-center space-x-4">
             {/* alert bell */}
-            <Link href="/policy">
+            <Link href="/policies">
               <a className="flex items-center justify-center w-10 h-10 text-sky-400 hover:text-gray-700 relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

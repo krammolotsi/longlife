@@ -1,44 +1,50 @@
 import { useState } from 'react';
 function NewPolicyForm(props) {
-  const [fullName, setfullName] = useState('');
+  const [fullName, setFullName] = useState('');
   const [idNum, setidNum] = useState('');
-  const [contact, setcontact] = useState('');
-  const [address, setaddress] = useState('');
+  const [inception, setInception] = useState('');
+  const [policyNumber, setPolicyNumber] = useState('');
   const [premium, setpremium] = useState('');
+  const [cover, setCover] = useState('');
 
   const isInvalid =
     fullName === '' ||
     idNum === '' ||
-    contact === '' ||
-    address === '' ||
+    policyNumber === '' ||
+    cover === '' ||
+    inception === '' ||
     premium === '';
 
+  //submit from form
   function submitHandler(event) {
     event.preventDefault();
     try {
       const policyData = {
         fullName: fullName,
-        contact: contact,
+        inception: inception,
         IdNum: idNum,
-        address: address,
+        policyNumber: policyNumber,
         premium: premium,
+        cover: cover,
       };
       //await firebase.auth().signInWithEmailAndPassword(emailAddress, password);
       //history.push(ROUTES.HOME);
     } catch (error) {
-      setfullName('');
+      setName('');
+      setSurname('');
       setidNum('');
       setcontact('');
-      setaddress('');
       setpremium('');
+      setPolicyNumber('');
+      setCover('');
       setError(error.message);
     }
 
     props.onAddPolicy(policyData);
   }
   return (
-    <div className="font-sans overflow-hidden">
-      <div className="relative min-h-screen flex flex-col sm:justify-center items-center bg-gray-100 ">
+    <div className="font-sans overflow-hidden w-full">
+      <div className="relative min-h-screen flex flex-col sm:justify-center items-center bg-gray-800 pt-12 md:pt-8">
         <div className="relative sm:max-w-sm w-full">
           <div className="card bg-sky-400 shadow-lg  w-full h-full rounded-3xl absolute animate-rotate"></div>
           <div className="card bg-orange-primary shadow-lg  w-full h-full rounded-3xl absolute  animate-rotate_neg"></div>
@@ -47,19 +53,18 @@ function NewPolicyForm(props) {
               for=""
               className="block mt-3 text-sm text-gray-700 text-center font-semibold"
             >
-              Register
+              Add New Policy
             </label>
             <form onSubmit={submitHandler} method="POST" className="mt-10">
               <div className="mt-7">
                 <input
                   type="text"
-                  placeholder="Full name"
+                  placeholder="Full Name"
                   className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
-                  onChange={({ target }) => setfullName(target.value)}
+                  onChange={({ target }) => setFullName(target.value)}
                   value={fullName}
                 />
               </div>
-
               <div className="mt-7">
                 <input
                   type="number"
@@ -74,17 +79,8 @@ function NewPolicyForm(props) {
                   type="text"
                   placeholder="Contact number"
                   className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
-                  onChange={({ target }) => setcontact(target.value)}
-                  value={contact}
-                />
-              </div>
-              <div className="mt-7">
-                <input
-                  type="text"
-                  placeholder="Address"
-                  className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
-                  onChange={({ target }) => setaddress(target.value)}
-                  value={address}
+                  onChange={({ target }) => setInception(target.value)}
+                  value={inception}
                 />
               </div>
               <div className="mt-7">
@@ -94,6 +90,15 @@ function NewPolicyForm(props) {
                   className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
                   onChange={({ target }) => setpremium(target.value)}
                   value={premium}
+                />
+              </div>
+              <div className="mt-7">
+                <input
+                  type="text"
+                  placeholder="Preium"
+                  className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
+                  onChange={({ target }) => setPolicyNumber(target.value)}
+                  value={policyNumber}
                 />
               </div>
               <div className="mt-7">
