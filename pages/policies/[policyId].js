@@ -13,7 +13,7 @@ function PolicyPage() {
         <title>Long Life Funeral</title>
         <link rel="icon" href="/longlifelogo.png" />
       </Head>
-      <Layout children={<div>i am policy holder page</div>} />
+      <Layout children={<div>i am policy holder page not form</div>} />
     </div>
   );
 }

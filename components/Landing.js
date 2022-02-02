@@ -13,7 +13,7 @@ export default function Landing() {
             minHeight: '75vh',
           }}
         >
-          {/* <div
+          <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
@@ -24,8 +24,8 @@ export default function Landing() {
               id="blackOverlay"
               className="w-full h-full absolute opacity-75 bg-black"
             ></span>
-          </div> */}
-          {/* <div className="container relative mx-auto">
+          </div>
+          <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
@@ -40,7 +40,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           <div
             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
             style={{ height: '70px' }}
@@ -62,7 +62,7 @@ export default function Landing() {
           </div>
         </div>
 
-        {/* <section className="pb-20 bg-gray-300 -mt-24">
+        <section className="pb-20 bg-gray-300 -mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -174,7 +174,7 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* <section className="relative py-20">
           <div

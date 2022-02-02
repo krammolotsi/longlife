@@ -9,6 +9,7 @@ import { signIn, useSession } from 'next-auth/react';
 import Landing from './Landing';
 function Layout(props) {
   const { data: session } = useSession();
+
   console.log(session);
   return (
     <>
