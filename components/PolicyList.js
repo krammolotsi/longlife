@@ -10,19 +10,20 @@ function PolicyList() {
   useEffect(() => {
     const getClients = async () => {
       const data = await getDocs(clientsCollection);
-      console.log(data);
+      // console.log(data);
       setClients(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getClients();
   }, []);
+
   return (
     <div className="w-full h-full bg-white grid grid-cols-1 md:grid-cols-4 overflow-auto flex-shrink-0 md:p-2 md:flex-shrink">
       {clients.map((policyHolder) => (
         <PolicyHolder
-          key={policyHolder.id}
+          key={policyHolder.policyNumber}
           id={policyHolder.id}
           fullName={policyHolder.fullName}
-          idNum={policyHolder.IdNum}
+          IdNumber={policyHolder.IdNumber}
           inception={policyHolder.inception}
           premium={policyHolder.premium}
           policyNumber={policyHolder.policyNumber}

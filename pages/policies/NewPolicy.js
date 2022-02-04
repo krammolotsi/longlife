@@ -9,6 +9,7 @@ function NewPolicy() {
   function addNewPolicyHandler(enteredPolicyData) {
     console.log(enteredPolicyData);
     //write to collection
+
     const sendData = async () => {
       try {
         const docRef = await addDoc(

@@ -13,7 +13,7 @@ function PolicyHolder(props) {
             <h3 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
               ID Num:
             </h3>
-            {props.idNum}
+            {props.IdNumber}
           </p>
           <p className="leading-normal truncate text-gray-dark">
             <h3 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
@@ -41,11 +41,8 @@ function PolicyHolder(props) {
           </p>
         </div>
         <div className="block bg-gray-light text-center p-2">
-          <Link href="/policies/hey">
-            <button
-              type="suubmit"
-              className="bg-sky-400 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out hover:bg-orange-primary transform hover:-translate-x hover:scale-105"
-            >
+          <Link href={'/policies/' + props.IdNumber} key={props.IdNumber}>
+            <button className="bg-sky-400 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out hover:bg-orange-primary transform hover:-translate-x hover:scale-105">
               More Info
             </button>
           </Link>

@@ -22,9 +22,9 @@ function InfoSlider() {
           </div>
           <div>
             <span className="font-semibold block uppercase text-xs text-gray-dark tracking-wider">
-              Visitorz
+              Monthly Payments
             </span>
-            <span className="font-semibold text-xl md:text-2xl">10,320</span>
+            <span className="font-semibold text-xl md:text-2xl">47,650</span>
           </div>
         </div>
         <div className="bg-orange-primary w-1/3 shadow-md border-orange-primary rounded-xl flex flex-col md:flex-row items-center px-3 py-5 md:p-5 space-x-0 md:space-x-5">
@@ -46,7 +46,7 @@ function InfoSlider() {
           </div>
           <div>
             <span className="font-semibold block uppercase text-xs text-white tracking-wider">
-              Visitors
+              Outstanding Payments
             </span>
             <span className="font-semibold text-xl md:text-2xl text-white">
               10,320
@@ -72,9 +72,9 @@ function InfoSlider() {
           </div>
           <div>
             <span className="font-semibold block uppercase text-xs text-gray-dark tracking-wider">
-              Visitors
+              New Business
             </span>
-            <span className="font-semibold text-xl md:text-2xl">10,320</span>
+            <span className="font-semibold text-xl md:text-2xl">320</span>
           </div>
         </div>
       </div>

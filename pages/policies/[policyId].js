@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import ReadToCloudFirestore from '../../components/cloudFirestore/Read';
+import InfoSlider from '../../components/InfoSlider';
 function PolicyPage() {
   //get access to router object containing values from the url
   const router = useRouter();
@@ -13,7 +15,10 @@ function PolicyPage() {
         <title>Long Life Funeral</title>
         <link rel="icon" href="/longlifelogo.png" />
       </Head>
-      <Layout children={<div>i am policy holder page not form</div>} />
+      <Layout
+        children={<ReadToCloudFirestore IdNumber={policyID} />}
+        infoSlider={<InfoSlider />}
+      />
     </div>
   );
 }

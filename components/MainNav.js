@@ -32,22 +32,6 @@ function MainNav() {
           </svg>
         </a>
       </Link>
-      <Link href="/policies">
-        <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white hover:bg-white hover:opacity-100 hover:text-sky-400 transform md:hover:translate-x-8 duration-300 hover:shadow-xl focus:outline-none md:focus:translate-x-8 focus:bg-white focus:text-sky-400">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
-      </Link>
       <Link href="/premium">
         <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white hover:bg-white hover:opacity-100 hover:text-sky-400 transform md:hover:translate-x-8 duration-300 hover:shadow-xl focus:outline-none md:focus:translate-x-8 focus:bg-white focus:text-sky-400">
           <svg
