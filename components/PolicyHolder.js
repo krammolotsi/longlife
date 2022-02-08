@@ -10,33 +10,38 @@ function PolicyHolder(props) {
             {props.fullName}
           </h3>
           <p className="leading-normal truncate text-gray-dark">
-            <h3 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
-              ID Num:
-            </h3>
+            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
+              ID Number:
+            </span>
+            <br />
             {props.IdNumber}
           </p>
           <p className="leading-normal truncate text-gray-dark">
-            <h3 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
+            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
               Inception:
-            </h3>
+            </span>
+            <br />
             {props.inception}
           </p>
           <p className="leading-normal truncate text-gray-dark">
-            <h3 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
-              Policy Num:
-            </h3>
+            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
+              Policy Number:
+            </span>
+            <br />
             {props.policyNumber}
           </p>
           <p className="leading-normal truncate text-gray-dark">
-            <h3 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
+            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
               Premium:
-            </h3>
+            </span>
+            <br />
             {props.premium}
           </p>
           <p className="leading-normal truncate text-gray-dark">
-            <h3 className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
+            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
               Cover:
-            </h3>
+            </span>
+            <br />
             {props.cover}
           </p>
         </div>

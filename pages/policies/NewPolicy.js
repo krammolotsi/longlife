@@ -7,7 +7,6 @@ import { db } from '../../firebase';
 //onAddPolicy={addNewPolicyHandler}
 function NewPolicy() {
   function addNewPolicyHandler(enteredPolicyData) {
-    console.log(enteredPolicyData);
     //write to collection
 
     const sendData = async () => {

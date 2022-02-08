@@ -30,10 +30,9 @@ function NewPolicyForm(props) {
       //await firebase.auth().signInWithEmailAndPassword(emailAddress, password);
       //history.push(ROUTES.HOME);
     } catch (error) {
-      setName('');
-      setSurname('');
+      setFullName('');
       setidNum('');
-      setcontact('');
+      setInception('');
       setpremium('');
       setPolicyNumber('');
       setCover('');
@@ -86,7 +85,7 @@ function NewPolicyForm(props) {
               <div className="mt-7">
                 <input
                   type="text"
-                  placeholder="Preium"
+                  placeholder="Premium"
                   className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
                   onChange={({ target }) => setpremium(target.value)}
                   value={premium}
@@ -95,7 +94,7 @@ function NewPolicyForm(props) {
               <div className="mt-7">
                 <input
                   type="text"
-                  placeholder="Preium"
+                  placeholder="Policy Number"
                   className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
                   onChange={({ target }) => setPolicyNumber(target.value)}
                   value={policyNumber}

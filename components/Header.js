@@ -1,10 +1,6 @@
 import Image from 'next/image';
 import {
   SearchIcon,
-  PlusCircleIcon,
-  UserGroupIcon,
-  HeartIcon,
-  PaperAirplaneIcon,
   BriefcaseIcon,
   MenuIcon,
   HomeIcon,

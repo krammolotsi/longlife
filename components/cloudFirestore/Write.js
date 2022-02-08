@@ -2,31 +2,13 @@
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 export default function WriteToCloudFirestore() {
-  // var usercollection = [
-  //   {
-  //     policyNumber: '01-202108-141898',
-  //     fullName: 'ANALENNA J OLIPHANT',
-  //     IdNumber: '9105310893084',
-  //     inception: '8/1/21',
-  //     premium: 'R138.00',
-  //     cover: 'R15,000.00',
-  //   },
-  //   {
-  //     policyNumber: '01-202108-141899',
-  //     fullName: 'GASELOANE EDLET SENKWETSE',
-  //     IdNumber: '6208200917089',
-  //     inception: '8/1/21',
-  //     premium: 'R138.00',
-  //     cover: 'R15,000.00',
-  //   },
-
   var usercollection = [
     {
       policyNumber: '01-202108-141898',
       fullName: 'ANALENNA J OLIPHANT',
       IdNumber: '9105310893084',
       inception: '8/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -34,7 +16,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GASELOANE EDLET SENKWETSE',
       IdNumber: '6208200917089',
       inception: '8/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -42,7 +24,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PATRICIA KGOPODIMETSI',
       IdNumber: '7601210815088',
       inception: '8/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -50,7 +32,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LENA MAMOKETE MATHE',
       IdNumber: '7704100953082',
       inception: '8/1/21',
-      premium: 'R121.00',
+      premium: '121.00',
       cover: 'R30,000.00',
     },
     {
@@ -58,7 +40,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'NKAGISANG ',
       IdNumber: '8702270724084',
       inception: '8/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -66,7 +48,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MALEBOGO VICTORIA ',
       IdNumber: '5505210830082',
       inception: '8/1/21',
-      premium: 'R45.00',
+      premium: '45.00',
       cover: 'R10,000.00',
     },
     {
@@ -74,7 +56,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SEGAMETSI LENAH ',
       IdNumber: '5911140211080',
       inception: '8/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -82,7 +64,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'FLORENCE MALEBOGO ',
       IdNumber: '7203032470083',
       inception: '8/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -90,7 +72,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAPASEKA PASCELINA ',
       IdNumber: '6104010743080',
       inception: '8/1/21',
-      premium: 'R121.00',
+      premium: '121.00',
       cover: 'R30,000.00',
     },
     {
@@ -98,7 +80,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHEGOFATSO NGAKE',
       IdNumber: '6160232085',
       inception: '8/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -106,7 +88,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOITSEMANG ',
       IdNumber: '5708250956086',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -114,7 +96,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KOAGILE SOLOMON ',
       IdNumber: '5608255894086',
       inception: '8/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -122,7 +104,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OTLOTLENG JEREMIAH ',
       IdNumber: '7103215908083',
       inception: '8/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -130,7 +112,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KGOSIETSILE LEBOGANG',
       IdNumber: '6412285793080',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -138,7 +120,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOTHEILEMANG ',
       IdNumber: '5804166118083',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -146,7 +128,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSETSANYANA ',
       IdNumber: '5712120445080',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -154,7 +136,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GASEBUSIWE BETTY ',
       IdNumber: '5012251388088',
       inception: '8/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -162,7 +144,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TUELO JOHANNES ',
       IdNumber: '5808245931085',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -170,7 +152,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADIWAPULE BESSY ',
       IdNumber: '4701230214081',
       inception: '8/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -178,7 +160,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KGOTSO MONICA ',
       IdNumber: '8605280339084',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -186,7 +168,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LENYATSO JOSEPH ',
       IdNumber: '6510015948088',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -194,7 +176,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KGAJE DANIEL LESHOWE',
       IdNumber: '6303045920081',
       inception: '8/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -202,7 +184,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OBAKENG OMOS ',
       IdNumber: '5201065343088',
       inception: '8/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -210,7 +192,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OBAKENG ISAAC JOHNNY',
       IdNumber: '6008265778081',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -218,7 +200,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TUELO MILLICENT ',
       IdNumber: '8108130470084',
       inception: '8/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -226,7 +208,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'NOJA THOMAS MARCH',
       IdNumber: '6106106001083',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -234,7 +216,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEALEBOG OLIVIA BAEPI',
       IdNumber: '9509080918080',
       inception: '8/1/21',
-      premium: 'R81.00',
+      premium: '81.00',
       cover: 'R20,000.00',
     },
     {
@@ -242,7 +224,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BONTLE KEVIN UYS',
       IdNumber: '9306235853084',
       inception: '8/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -250,7 +232,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE LINDA ',
       IdNumber: '8410110550087',
       inception: '8/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -258,7 +240,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELIZABETH LESHOE',
       IdNumber: '5912040975089',
       inception: '8/1/21',
-      premium: 'R121.00',
+      premium: '121.00',
       cover: 'R30,000.00',
     },
     {
@@ -266,7 +248,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OBUSITSE DAVID ',
       IdNumber: '6001095869089',
       inception: '8/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -274,7 +256,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MODISAOTSILE MICHAEL ',
       IdNumber: '7501295727085',
       inception: '8/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -282,7 +264,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOETTE JOHANNES ',
       IdNumber: '5611045839080',
       inception: '8/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -290,7 +272,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASERAME LENAH ',
       IdNumber: '5808300904084',
       inception: '8/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -298,7 +280,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KALAEMANG MOKGOTHU',
       IdNumber: '4903125260084',
       inception: '8/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -306,7 +288,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SHADRACK THIBOGANG',
       IdNumber: '5908135881083',
       inception: '8/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -314,7 +296,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASEGO GLORIA ',
       IdNumber: '7003011136089',
       inception: '8/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -322,7 +304,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOROKE MAINE',
       IdNumber: '6409255642081',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -330,7 +312,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GLADYS LEEMA',
       IdNumber: '5507270878084',
       inception: '8/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -338,7 +320,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'FRANCIAH SEPHONONO ',
       IdNumber: '8307020482080',
       inception: '8/1/21',
-      premium: 'R121.00',
+      premium: '121.00',
       cover: 'R30,000.00',
     },
     {
@@ -346,7 +328,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BONTLEENG VIOLET ',
       IdNumber: '7001190787086',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -354,7 +336,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'WILLIAM PETROS',
       IdNumber: '5903235967080',
       inception: '8/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -362,7 +344,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'AGOSI ANDREW ROOI',
       IdNumber: '6001185914084',
       inception: '8/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -370,7 +352,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PODISE JOHN ',
       IdNumber: '5509285563081',
       inception: '8/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -378,7 +360,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEGOAMANG NORAH ',
       IdNumber: '4904150256088',
       inception: '8/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -386,7 +368,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GADIHELE EVELYN ',
       IdNumber: '4810120598089',
       inception: '8/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -394,7 +376,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Kelebogile Motshwari',
       IdNumber: '8311040481080',
       inception: '1/1/22',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -402,7 +384,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Keitumetse Maoka',
       IdNumber: '8702180924089',
       inception: '1/1/22',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -410,7 +392,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Martha Swartz',
       IdNumber: '6804290190080',
       inception: '1/1/22',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -418,7 +400,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Boshane Khaba',
       IdNumber: '9408010373088',
       inception: '1/1/22',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -426,7 +408,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Morekisi Mmolawa',
       IdNumber: '6608065748083',
       inception: '1/1/22',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -434,7 +416,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Albet Mosweu',
       IdNumber: '4009125202082',
       inception: '1/1/22',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -442,7 +424,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Reetsanyang Ito',
       IdNumber: '9009110717081',
       inception: '1/1/22',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -450,7 +432,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Makholo Ito',
       IdNumber: '4010300377087',
       inception: '1/1/22',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -458,7 +440,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Dineo Malgas',
       IdNumber: '7401070678084',
       inception: '1/1/22',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -466,7 +448,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Dineo Malgas',
       IdNumber: '7401070678084',
       inception: '1/1/22',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -474,7 +456,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Kokeletso Mongale',
       IdNumber: '9207150630087',
       inception: '1/1/22',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -482,7 +464,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Monka Sima',
       IdNumber: '5505150946088',
       inception: '1/1/22',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -490,7 +472,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Flora Totwe',
       IdNumber: '7801110835083',
       inception: '1/1/22',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -498,7 +480,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Moatlhodi Moleme',
       IdNumber: '6612285851081',
       inception: '1/1/22',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -506,7 +488,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Otlametse Mojaki',
       IdNumber: '6801310606087',
       inception: '1/1/22',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -514,7 +496,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Tshireletso Kasienyane',
       IdNumber: '4903165142085',
       inception: '1/1/22',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -522,7 +504,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Lakhe Khen',
       IdNumber: '4606075556084',
       inception: '1/1/22',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -530,7 +512,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'Badirwang Mpolokeng',
       IdNumber: '4402180500088',
       inception: '1/1/22',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -538,7 +520,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASIGOMABE ',
       IdNumber: '6001016669089',
       inception: '8/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -546,7 +528,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OUMA MARIA MAOKA',
       IdNumber: '5010100642085',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -554,7 +536,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'POLOKO JOSEPH ',
       IdNumber: '7305106213081',
       inception: '10/1/21',
-      premium: 'R81.00',
+      premium: '81.00',
       cover: 'R20,000.00',
     },
     {
@@ -562,7 +544,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GONAAMANG ',
       IdNumber: '9102020901083',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -570,7 +552,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEIKANTSEMANG GLORIA ',
       IdNumber: '6805140914082',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -578,7 +560,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOIPELO PATRICIA SEBEGI',
       IdNumber: '8310180544087',
       inception: '10/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -586,7 +568,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MARTIN KALELEKILE',
       IdNumber: '5412155858089',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -594,7 +576,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DINEO HILDA SEBOLAI',
       IdNumber: '7701130299080',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -602,7 +584,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOJAKI ABRAHAM ',
       IdNumber: '7812145941085',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -610,7 +592,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LESEDI DISIPI',
       IdNumber: '9707160748084',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -618,7 +600,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GABATSHWANE ',
       IdNumber: '6602121168089',
       inception: '10/1/21',
-      premium: 'R81.00',
+      premium: '81.00',
       cover: 'R20,000.00',
     },
     {
@@ -626,7 +608,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PELONOMI PHETLHANE',
       IdNumber: '9204020733084',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -634,7 +616,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KETHABILE KALI',
       IdNumber: '7404270949081',
       inception: '10/1/21',
-      premium: 'R81.00',
+      premium: '81.00',
       cover: 'R20,000.00',
     },
     {
@@ -642,7 +624,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHIRELETSO BERTHA ',
       IdNumber: '7504101077083',
       inception: '10/1/21',
-      premium: 'R121.00',
+      premium: '121.00',
       cover: 'R30,000.00',
     },
     {
@@ -650,7 +632,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MORETIEMANG JEANY ',
       IdNumber: '6706061749087',
       inception: '10/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -658,7 +640,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELISA M ROY',
       IdNumber: '6803270249080',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -666,7 +648,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEALEBOGA MOREMONG',
       IdNumber: '9707215594087',
       inception: '10/1/21',
-      premium: 'R81.00',
+      premium: '81.00',
       cover: 'R20,000.00',
     },
     {
@@ -674,7 +656,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SENTIENG JOHN ',
       IdNumber: '7308105887087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -682,7 +664,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOITSHEPO KHUKHE',
       IdNumber: '9301100364085',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -690,7 +672,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TEBOGO PHETLHANE',
       IdNumber: '6404265711083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -698,7 +680,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOITSEMANG TOKONG',
       IdNumber: '6909040101087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -706,7 +688,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAMOKETE CINDY ',
       IdNumber: '8705090559085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -714,7 +696,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JEANETTE MAHLATHI',
       IdNumber: '7706062282087',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -722,7 +704,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MANENEKETSANG SINAH ',
       IdNumber: '6508150782080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -730,7 +712,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOETI PHETLHANE',
       IdNumber: '6707105732089',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -738,7 +720,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASERAME EUNICE ',
       IdNumber: '9006220597080',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -746,7 +728,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OBAKENG MOREMONG',
       IdNumber: '9204085856085',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -754,7 +736,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'AGNES LENTIDI',
       IdNumber: '7104041437081',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -762,7 +744,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DIRAAMANG NELLY ',
       IdNumber: '6909040099083',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -770,7 +752,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PHOKOJANE JOSEPH ',
       IdNumber: '5706166283082',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -778,7 +760,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TUMO MICHAEL ',
       IdNumber: '5811105171081',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -786,7 +768,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ONALENNA HOWARD ',
       IdNumber: '7803265389080',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -794,7 +776,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOLIBIEMANG LUCIA ',
       IdNumber: '7709030626088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -802,7 +784,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DINEO VIVIAN ',
       IdNumber: '8603090628085',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -810,7 +792,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KATLEGO DAPHNEY BAEPI',
       IdNumber: '9102250905085',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -818,7 +800,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEITUMETSE SEILE',
       IdNumber: '7903020511083',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -826,7 +808,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SERETSO CLEOPATRA ',
       IdNumber: '7803220803084',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -834,7 +816,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KGALALELO GLORIA TAU',
       IdNumber: '6912291152080',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -842,7 +824,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ONEBOY SENKI LECHUTI',
       IdNumber: '7812246157086',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -850,7 +832,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KALABUA OLIPHANT ',
       IdNumber: '7710045964084',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -858,7 +840,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'EMELDA KGAGANE',
       IdNumber: '8209120595086',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -866,7 +848,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LYDIA TEBATSO CHAKALE',
       IdNumber: '9108080735089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -874,7 +856,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAPASEKA LESHOBO',
       IdNumber: '6004290682083',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -882,7 +864,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MATSHIDIDO REGINAH ',
       IdNumber: '5505300430082',
       inception: '10/1/21',
-      premium: 'R148.00',
+      premium: '148.00',
       cover: 'R15,000.00',
     },
     {
@@ -890,7 +872,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MMONIEMANG LENAH ',
       IdNumber: '7407220853089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -898,7 +880,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAVELAPHI VICTORIA ',
       IdNumber: '5211270722083',
       inception: '10/1/21',
-      premium: 'R148.00',
+      premium: '148.00',
       cover: 'R15,000.00',
     },
     {
@@ -906,7 +888,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSELANE ELIZABETH ROOI',
       IdNumber: '6403310700083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -914,7 +896,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOTLALEFEDILE MAINE',
       IdNumber: '9208301028080',
       inception: '10/1/21',
-      premium: 'R81.00',
+      premium: '81.00',
       cover: 'R20,000.00',
     },
     {
@@ -922,7 +904,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAVELAPHI VICTORIA ',
       IdNumber: '5211270722083',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -930,7 +912,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MARIA LETLHOGONOLO ',
       IdNumber: '7508220972082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -938,7 +920,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEBONYENG ',
       IdNumber: '8604210805082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -946,7 +928,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SENENE ABRAHAM ',
       IdNumber: '5606235718086',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -954,7 +936,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BAHEDILE FRANSINA ',
       IdNumber: '5605200978089',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -962,7 +944,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BAIRWANG JOEL ',
       IdNumber: '6608205843083',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -970,7 +952,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MMENYANE BELLIMINA ',
       IdNumber: '8412100395085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -978,7 +960,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'RUTH MOKGADI ',
       IdNumber: '6004250922081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -986,7 +968,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TEKO ISAAC MOTSAMAI',
       IdNumber: '5609145869080',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -994,7 +976,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEKEGILE MATSHELO',
       IdNumber: '6410060885089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1002,7 +984,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'NKAGISANG LYDIA ',
       IdNumber: '7301100282081',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -1010,7 +992,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ANASTACIA MOSEPELE',
       IdNumber: '5305120700081',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -1018,7 +1000,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KENOSI SEETELO',
       IdNumber: '5808081389083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1026,7 +1008,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSIAMEEMANG ',
       IdNumber: '7309240724086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1034,7 +1016,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOSHUPNG JANE ',
       IdNumber: '6609170785085',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -1042,7 +1024,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GLADYS LESHONANG',
       IdNumber: '8609261869085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1050,7 +1032,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GAOGANEDIWE GALEBOE',
       IdNumber: '6204305844088',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -1058,7 +1040,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEITUMETSE MARIA ',
       IdNumber: '6012130922080',
       inception: '10/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -1066,7 +1048,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOITSHOKO ',
       IdNumber: '8606060980089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1074,7 +1056,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MATSHIDISO GASEITSIWE',
       IdNumber: '105290400081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1082,7 +1064,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KERILENG VIOLET ',
       IdNumber: '6804281104082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1090,7 +1072,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PAAKANYO SOPHIE ',
       IdNumber: '6911260864089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1098,7 +1080,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KGOMOTSO LEKAOWA',
       IdNumber: '8812241233089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1106,7 +1088,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MMAPITSO DORAH ',
       IdNumber: '8510100933084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1114,7 +1096,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE GLORIA ',
       IdNumber: '8206190547088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1122,7 +1104,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAGGIE KGOMOTSO ',
       IdNumber: '7006240853085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1130,7 +1112,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOMOLEMO MOSIELELE',
       IdNumber: '6605240842088',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -1138,7 +1120,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOTLALETSWE ',
       IdNumber: '6903090834085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1146,7 +1128,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MICHAEL VELAPHI RUITER',
       IdNumber: '6503185892087',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -1154,7 +1136,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JEREMIA KGASWANE',
       IdNumber: '4705095178083',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -1162,7 +1144,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OSENOTSE PAMELA ',
       IdNumber: '8508160731083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1170,7 +1152,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOLAOTSEMANG ',
       IdNumber: '5203195621086',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -1178,7 +1160,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOITSILEMANG ',
       IdNumber: '7402126283085',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -1186,7 +1168,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADIWAPULA ',
       IdNumber: '7602022820084',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -1194,7 +1176,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BASADIEMANG JEHOFA',
       IdNumber: '5801180820082',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -1202,7 +1184,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TUMELO FRANCIS ',
       IdNumber: '9807035051084',
       inception: '10/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -1210,7 +1192,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MALEBOGO FRANS',
       IdNumber: '7810060902082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1218,7 +1200,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOHULENYANE ',
       IdNumber: '6504020914086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1226,7 +1208,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PIET MOSEKI',
       IdNumber: '6204126053083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1234,7 +1216,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOIPELO PORTIA ',
       IdNumber: '9203200798081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1242,7 +1224,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAPULE AGNES ',
       IdNumber: '7101060942082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1250,7 +1232,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MALEBOGO MOKGELE',
       IdNumber: '7502200813085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1258,7 +1240,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ARABANG GLORIA ',
       IdNumber: '8203100817081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1266,7 +1248,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KENEILWE MAGABE',
       IdNumber: '9307110500089',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -1274,7 +1256,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOLIBIEMANG LUCIA ',
       IdNumber: '7709030626088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1282,7 +1264,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LYDIA LEKGETHO',
       IdNumber: '8303030816086',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -1290,7 +1272,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SHIREEN STEENKAMP',
       IdNumber: '8504300268086',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -1298,7 +1280,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE PILANE',
       IdNumber: '5912220900089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1306,7 +1288,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOSALAMANG MOTHUPI',
       IdNumber: '5311100923081',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R20,000.00',
     },
     {
@@ -1314,7 +1296,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEPABETSE SAMUEL ',
       IdNumber: '5811075950084',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -1322,7 +1304,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MONNAPULA DAVID ',
       IdNumber: '6104125675086',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -1330,7 +1312,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELINAH DIKELEDI ',
       IdNumber: '3808060093088',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -1338,7 +1320,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OAGENG JAMES ',
       IdNumber: '4412025503080',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -1346,7 +1328,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SEDIAPELO MOSALA',
       IdNumber: '4901290261085',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -1354,7 +1336,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JASAYA RATSHIPI ',
       IdNumber: '4006165569081',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R20,000.00',
     },
     {
@@ -1362,7 +1344,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE KOMANE',
       IdNumber: '5204050920084',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -1370,7 +1352,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BATLABATSI SING ',
       IdNumber: '4406275443088',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -1378,7 +1360,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MBONYANE ALOYSIUS ',
       IdNumber: '4004015639089',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -1386,7 +1368,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE MATSEANE',
       IdNumber: '6702270480085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1394,7 +1376,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDIBONE MARIA ',
       IdNumber: '4008160299086',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -1402,7 +1384,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSHE PHETLHANE',
       IdNumber: '5908275791084',
       inception: '10/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -1410,7 +1392,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ANGELINAH MPHAHLELE',
       IdNumber: '6101060239084',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -1418,7 +1400,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BONGANI MATHINZA',
       IdNumber: '9611035526081',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -1426,7 +1408,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OUMAKIE ELMA ',
       IdNumber: '7406010441089',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -1434,7 +1416,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'EVA DIPUO MOAGI',
       IdNumber: '8612091245088',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -1442,7 +1424,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHEGOFATSO ',
       IdNumber: '7001051501089',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -1450,7 +1432,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MARIE LEEUW',
       IdNumber: '7202140630083',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -1458,7 +1440,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SELAOLWE MARTHA ',
       IdNumber: '6410200757080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1466,7 +1448,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BUTIE JOHANNES MOKAE',
       IdNumber: '7408126203080',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -1474,7 +1456,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PELONOMI SEOKWANG',
       IdNumber: '9410190854085',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -1482,7 +1464,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KAGISO GILBERT ',
       IdNumber: '7709145776083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1490,7 +1472,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOLEMOENG LENAH ',
       IdNumber: '5802050311087',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -1498,7 +1480,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DORCAS KEALEBOGA ',
       IdNumber: '9609260478085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1506,7 +1488,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SINGLEBOY GADITSHOSE',
       IdNumber: '5109235201088',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -1514,7 +1496,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ISRAEL NCWENG',
       IdNumber: '5808235916088',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -1522,7 +1504,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BAITSENG ROSEY ',
       IdNumber: '7208140949084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1530,7 +1512,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOB RAMADIBA SEBOKO',
       IdNumber: '4009065475086',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -1538,7 +1520,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SAM DRINKWATER',
       IdNumber: '8112065567088',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -1546,7 +1528,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'CONSTANCE DITLHORISO ',
       IdNumber: '5808050337089',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -1554,7 +1536,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOTUMILE BUYS',
       IdNumber: '8304286051089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1562,7 +1544,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDIBONE ELLEN TLALE',
       IdNumber: '7306201070087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1570,7 +1552,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MABEBE MOGAMISI',
       IdNumber: '6208220886082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1578,7 +1560,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHOLOFELO ',
       IdNumber: '8909150985087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1586,7 +1568,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAKHUDUGA ELISA ',
       IdNumber: '5409040849083',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -1594,7 +1576,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DORCAS KEALEBOGA ',
       IdNumber: '9609260478085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1602,7 +1584,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DOROTHY KELEBOGILE ',
       IdNumber: '6206170126087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1610,7 +1592,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEABETSWE MOCUMI',
       IdNumber: '6503051154083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1618,7 +1600,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BUTIE JOHANNES MOKAE',
       IdNumber: '7408126203080',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -1626,7 +1608,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BARI DAVID ',
       IdNumber: '4405155504084',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -1634,7 +1616,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MATLAKALA PATRICIA ',
       IdNumber: '9001170740087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1642,7 +1624,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MABEBE MOGAMISI',
       IdNumber: '6208220886082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1650,7 +1632,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOODFRE SEBELESHO',
       IdNumber: '7604275952085',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -1658,7 +1640,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JACOB BERENG',
       IdNumber: '6508115289080',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -1666,7 +1648,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DORRAH NTSETSANA ',
       IdNumber: '6502250893087',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -1674,7 +1656,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEAMOGETSE MATLHOKO',
       IdNumber: '4509220354084',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -1682,7 +1664,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OSENOTSE PAMELA ',
       IdNumber: '8508160731083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1690,7 +1672,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KGOTLAETSILE PIET ',
       IdNumber: '4603185567085',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -1698,7 +1680,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOLATLHEGI FOSO',
       IdNumber: '3812035303085',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -1706,7 +1688,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GALOOME JULIA SELEKE',
       IdNumber: '7505051732080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1714,7 +1696,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOTHIBAKGOMO ',
       IdNumber: '6008295792086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1722,7 +1704,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAIKUTLO MALEHO',
       IdNumber: '7911270997084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1730,7 +1712,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ROSE SEWAGODIMO',
       IdNumber: '8406070971081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1738,7 +1720,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'VERONICA MOTSHWAEDI',
       IdNumber: '9809140342085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1746,7 +1728,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHEBONG JOSEPHINE ',
       IdNumber: '8909041572086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1754,7 +1736,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOYCE CHABAESELE',
       IdNumber: '6811190770085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1762,7 +1744,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'EMILY GOSENYEGANG',
       IdNumber: '8209031003089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1770,7 +1752,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PULANE GOSENYEGANG',
       IdNumber: '6805170834085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1778,7 +1760,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'VIRGINIA MOTETE',
       IdNumber: '7711260898080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1786,7 +1768,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADIWAMAROPE ',
       IdNumber: '7108200942088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1794,7 +1776,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE KGOPE',
       IdNumber: '7611040920081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1802,7 +1784,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PULANE GOSENYEGANG',
       IdNumber: '6805170834085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1810,7 +1792,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LIESBET MOAGI',
       IdNumber: '9012150318083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1818,7 +1800,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LESEGO MMEREKI',
       IdNumber: '8607120221084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1826,7 +1808,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAGDELINE ',
       IdNumber: '9012011028087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1834,7 +1816,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHEGOFATSO ',
       IdNumber: '7001051501089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1842,7 +1824,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SYLVIA MARUPING',
       IdNumber: '6605051661080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1850,7 +1832,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MATSHEDISO MOKAE',
       IdNumber: '7903051211082',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -1858,7 +1840,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOITSHASIWANG AGNES ',
       IdNumber: '5806021121087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1866,7 +1848,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GADIFELE ',
       IdNumber: '106131021086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1874,7 +1856,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GALELEMONGWE ',
       IdNumber: '9303020695085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1882,7 +1864,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KENEWWANG ANNAH ',
       IdNumber: '5604170203081',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -1890,7 +1872,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELISA DISETLHE',
       IdNumber: '8005160668084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1898,7 +1880,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BONTSENE ALETTA ',
       IdNumber: '9505050895084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1906,7 +1888,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'EVA DIPUO MOAGI',
       IdNumber: '8612091245088',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -1914,7 +1896,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEHILWE MIRRIAM ',
       IdNumber: '5908240780089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1922,7 +1904,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAROPE MONABE',
       IdNumber: '7502121103087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1930,7 +1912,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DORRAH NTSETSANA ',
       IdNumber: '6502250893087',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -1938,7 +1920,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LIZZIE DITLHAMANE ',
       IdNumber: '6005200912080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1946,7 +1928,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MITA MONEIEMANG ',
       IdNumber: '5711260900086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1954,7 +1936,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SHAMELL ABIGAIL ',
       IdNumber: '9307130327083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1962,7 +1944,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEROTSE JOYFUL ',
       IdNumber: '6511010869089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1970,7 +1952,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SOPHI MATITI',
       IdNumber: '6511280198086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1978,7 +1960,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BATLHABANI SHUPING',
       IdNumber: '7011106097082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1986,7 +1968,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'AKANYANG KGATLANE',
       IdNumber: '8202250953084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -1994,7 +1976,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ISRAEL ANDRIES BUYS',
       IdNumber: '6910035417082',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2002,7 +1984,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ISRAEL ANDRIES BUYS',
       IdNumber: '6910035417082',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -2010,7 +1992,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAMONYENYANE MARIA ',
       IdNumber: '7603181077086',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2018,7 +2000,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DORAH VANWYK',
       IdNumber: '6412121714084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2026,7 +2008,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MIETA BONNIE BUFFEL',
       IdNumber: '7901160868081',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2034,7 +2016,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADIWAPULA ROSY ',
       IdNumber: '7403200854080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2042,7 +2024,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'EMMAH MALESHANE ',
       IdNumber: '8308140456087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2050,7 +2032,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BANINIE MOKAE',
       IdNumber: '7706260244087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2058,7 +2040,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SIAMISANG MATHILDA ',
       IdNumber: '6112050884086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2066,7 +2048,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GORONGWAMANG ',
       IdNumber: '7208070961083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2074,7 +2056,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GAOLESE ELIZA ',
       IdNumber: '7005020704088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2082,7 +2064,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KOOS TEBOGO ',
       IdNumber: '8212255758081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2090,7 +2072,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LORENTI PHEKONYANE',
       IdNumber: '6209045976082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2098,7 +2080,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOITHEIMANG JULIA ',
       IdNumber: '6308031010086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2106,7 +2088,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEALEBOGA SALVATION ',
       IdNumber: '9401130726087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2114,7 +2096,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'RAPHIRITSHWANE ',
       IdNumber: '7403285723085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2122,7 +2104,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'THABISHO MOEKETSI',
       IdNumber: '8611175553086',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2130,7 +2112,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEIKANETSWE MONGALE',
       IdNumber: '7312190786089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2138,7 +2120,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'THUPAYAMORE SEELO',
       IdNumber: '5603155556083',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -2146,7 +2128,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHOLOFELO DOREEN ',
       IdNumber: '8303270527088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2154,7 +2136,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADIWAPULA ',
       IdNumber: '7302022184082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2162,7 +2144,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GAELEBALE GLORIA ',
       IdNumber: '5101120240081',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -2170,7 +2152,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELISA MOOKIWA',
       IdNumber: '6302140877089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2178,7 +2160,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEOLEBOGILE DALENA ',
       IdNumber: '12100476089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2186,7 +2168,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DIMAKATSA RHINA ',
       IdNumber: '9104240931080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2194,7 +2176,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'EVELYN AHMED',
       IdNumber: '8302180566087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2202,7 +2184,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MANTSHO GEORGINAH ',
       IdNumber: '9601021598087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2210,7 +2192,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELSIE DIPHAE',
       IdNumber: '9903231472081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2218,7 +2200,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MPHO LYDIA MOKOTO',
       IdNumber: '7908310532087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2226,7 +2208,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PELONOMI KHUMOENG',
       IdNumber: '6404190800084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2234,7 +2216,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAJANE LESHOWE',
       IdNumber: '6809141035087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2242,7 +2224,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GEORFINAH THIBAPELO',
       IdNumber: '6408160944087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2250,7 +2232,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEORAPETSE PATRICIA ',
       IdNumber: '7909080561082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2258,7 +2240,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SEGOMOTSO SITASE',
       IdNumber: '9107101073082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2266,7 +2248,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOHANNAH MATHAPELO ',
       IdNumber: '9806260823084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2274,7 +2256,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEBONEILWE KWATE',
       IdNumber: '5701012069082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2282,7 +2264,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDISALETSE MARIA ',
       IdNumber: '4907130556089',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -2290,7 +2272,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOTOBAKI MARIA ',
       IdNumber: '4806190679080',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -2298,7 +2280,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SAM DRINKWATER',
       IdNumber: '8112065567088',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2306,7 +2288,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'WARABILE DISETLHE',
       IdNumber: '8406235514081',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2314,7 +2296,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TUELO NKEDI',
       IdNumber: '7311245722081',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -2322,7 +2304,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOIPELO JACOBS',
       IdNumber: '7504141117089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2330,7 +2312,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DIMAKATSO MAGGIE ',
       IdNumber: '6201140941087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2338,7 +2320,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOITSEMANG TSAME',
       IdNumber: '6708100953084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2346,7 +2328,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PULANE FRANCINAH ',
       IdNumber: '7502281241081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2354,7 +2336,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELSIE MOTSHWAEDI',
       IdNumber: '7006151074085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2362,7 +2344,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'NTSWAKI HLONGWANE',
       IdNumber: '8801051427089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2370,7 +2352,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOTUMILE BUYS',
       IdNumber: '8304286051089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2378,7 +2360,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEITUMETSE RITA JACOBS',
       IdNumber: '7604050239088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2386,7 +2368,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GODFREY GADIKGALE',
       IdNumber: '7205126234085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2394,7 +2376,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BETTY ANNA NOGANYANE',
       IdNumber: '8006062420087',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2402,7 +2384,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASERAME MOSALA',
       IdNumber: '6809010056081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2410,7 +2392,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ANGELINAH DIPHATSE',
       IdNumber: '7102040725084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2418,7 +2400,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DIKAGISO MARUPING',
       IdNumber: '7810080478089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2426,7 +2408,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOKWENE MAERMAN',
       IdNumber: '5712040767084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2434,7 +2416,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDIDIMETSE MOETI',
       IdNumber: '8212070514081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2442,7 +2424,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ITEMOGENG ',
       IdNumber: '7608190811086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2450,7 +2432,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHWARAGANELO ',
       IdNumber: '8811075607087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2458,7 +2440,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOGOMOTSI KUJANE',
       IdNumber: '7907180793084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2466,7 +2448,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHEDISI KUJANE',
       IdNumber: '7109145905081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2474,7 +2456,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'REJOICE AARON',
       IdNumber: '7912140446088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2482,7 +2464,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DINEO MADIBE',
       IdNumber: '8109170627088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2490,7 +2472,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KESENEILWE SALOME',
       IdNumber: '8102020833089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2498,7 +2480,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MALESHANE RAPATI',
       IdNumber: '6803011070084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2506,7 +2488,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAGRET MOGORWE',
       IdNumber: '7409190759080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2514,7 +2496,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAGRET MOGORWE',
       IdNumber: '7409190759080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2522,7 +2504,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LERATO MOSITWANE',
       IdNumber: '8809051464085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2530,7 +2512,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MMETU KEPI',
       IdNumber: '6005160979087',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2538,7 +2520,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GLORIA SEBEGO',
       IdNumber: '8612080493087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2546,7 +2528,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BUHIKI MAHOBE',
       IdNumber: '6709185510088',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -2554,7 +2536,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TLOHO GODWIN PILANE',
       IdNumber: '9905036187087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2562,7 +2544,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE PILANE',
       IdNumber: '5912220900089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2570,7 +2552,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHEPO MOGORWE',
       IdNumber: '8111225575080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2578,7 +2560,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BAELETSI SEKONO',
       IdNumber: '4801230620087',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -2586,7 +2568,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASERAME MOSALA',
       IdNumber: '6809010056081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2594,7 +2576,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MEILANG MATTHEWS',
       IdNumber: '6305100817086',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2602,7 +2584,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BUHIKI MAHOBE',
       IdNumber: '6709185510088',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2610,7 +2592,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BERTINA NKATSWANG',
       IdNumber: '8711020925081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2618,7 +2600,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'REFILWE MATWE',
       IdNumber: '7902140458084',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -2626,7 +2608,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JULIA MERE',
       IdNumber: '7106051431086',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2634,7 +2616,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SUZAN KEEMOGILE ',
       IdNumber: '5408090829086',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -2642,7 +2624,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOGADIOTSILE MOTHIBI',
       IdNumber: '5309280831082',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -2650,7 +2632,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'THUPAYAMORE SEELO',
       IdNumber: '5603155556083',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -2658,7 +2640,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BENJAMIN KHUMOENG',
       IdNumber: '5707275679087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2666,7 +2648,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KESELEPILE PHOKANE',
       IdNumber: '5908030271083',
       inception: '10/1/21',
-      premium: 'R50.00',
+      premium: '50.00',
       cover: 'R20,000.00',
     },
     {
@@ -2674,7 +2656,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OBAKENG SIMON ',
       IdNumber: '8212045456087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2682,7 +2664,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'HILDA TSABANGWE',
       IdNumber: '7308060872082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2690,7 +2672,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KAMOGELO SEEKOEI',
       IdNumber: '8407160785084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2698,7 +2680,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEMOGILE PITORO',
       IdNumber: '6712030064087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2706,7 +2688,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSIDI KGAGANE',
       IdNumber: '5907130881080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2714,7 +2696,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OBAKENG VICTOR ',
       IdNumber: '5606166087089',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -2722,7 +2704,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ONTSHEKETSE RASESANE',
       IdNumber: '8904200793086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2730,7 +2712,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEBONEILWE MOTSEGOA',
       IdNumber: '7208121220083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2738,7 +2720,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GEORFINAH THIBAPELO',
       IdNumber: '6408160944087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2746,7 +2728,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DINEO RHINA KGOPE',
       IdNumber: '9512010885080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2754,7 +2736,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOIPELO SELESENG',
       IdNumber: '7912220809080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2762,7 +2744,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOINGOTLO MORETLWE',
       IdNumber: '8208010767086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2770,7 +2752,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHEGOHATSO ',
       IdNumber: '5711150997085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2778,7 +2760,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASEGO SEBEGO',
       IdNumber: '5102010266087',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -2786,7 +2768,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'FAITH MOTSAKO',
       IdNumber: '7912300738084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2794,7 +2776,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOTLALEPULE MMEREKI',
       IdNumber: '7605050310084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2802,7 +2784,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSETSANAGAPE ',
       IdNumber: '6008170807082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2810,7 +2792,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BENJAMIN KHUMOENG',
       IdNumber: '5707275679087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2818,7 +2800,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JANE OTSWELANG',
       IdNumber: '8208210954088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2826,7 +2808,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEALEBOGA SEETELO',
       IdNumber: '7306140345087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2834,7 +2816,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOLEHENYANE ',
       IdNumber: '7605205906083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2842,7 +2824,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOHN CHAPMAN',
       IdNumber: '6411065883087',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2850,7 +2832,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'WARABILE DISETLHE',
       IdNumber: '8406235514081',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2858,7 +2840,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAKOSI MATEBESI',
       IdNumber: '6004130319086',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2866,7 +2848,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE DIPHATSE',
       IdNumber: '6103200821086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2874,7 +2856,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELSIE MOTSHWAEDI',
       IdNumber: '7006151074085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2882,7 +2864,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KRISSIE VANWYK',
       IdNumber: '7407080970080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2890,7 +2872,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KARABO MAGABE',
       IdNumber: '6807121066080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2898,7 +2880,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GLORIA SEKONO',
       IdNumber: '7303061368081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -2906,7 +2888,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GADIHELE MORESEKAO',
       IdNumber: '4009020431083',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -2914,7 +2896,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOITSEMANG JABETLA',
       IdNumber: '4510020106088',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -2922,7 +2904,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOLEMOENG MOLLY ',
       IdNumber: '4808080921085',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -2930,7 +2912,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAOTEHETSE EMILY ',
       IdNumber: '5108080781087',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -2938,7 +2920,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ENOCK BONOKWANE',
       IdNumber: '5703215628086',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -2946,7 +2928,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BETTY MOSETLHO',
       IdNumber: '6301051178081',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -2954,7 +2936,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'THABAYAKGOSI ',
       IdNumber: '5702165877081',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -2962,7 +2944,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'NTWAEAKGOTLA SEBE',
       IdNumber: '4609045294083',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -2970,7 +2952,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAKUKU MARIA ',
       IdNumber: '5011111030088',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -2978,7 +2960,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE KOMANE',
       IdNumber: '5204050920084',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -2986,7 +2968,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TIDIMALO GAEATLHOLWE',
       IdNumber: '4412150513086',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -2994,7 +2976,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'HANS MOKOTO',
       IdNumber: '5908185903084',
       inception: '10/1/21',
-      premium: 'R38.00',
+      premium: '38.00',
       cover: 'R15,000.00',
     },
     {
@@ -3002,7 +2984,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADIWAMAROPE ',
       IdNumber: '4411020489089',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -3010,7 +2992,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELIZABETH KOLOTI',
       IdNumber: '5606010779089',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -3018,7 +3000,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ABOLOKENG ISAAC ',
       IdNumber: '5106245655089',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -3026,7 +3008,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PHALAKI MITAH ',
       IdNumber: '4510150598088',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -3034,7 +3016,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KENEWANG AGNES ',
       IdNumber: '5504110820087',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -3042,7 +3024,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MPHO JAMES ',
       IdNumber: '8712085772087',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -3050,7 +3032,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GABOHELE MODISE',
       IdNumber: '5610010275080',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -3058,7 +3040,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEBUILENG ',
       IdNumber: '5712281012083',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -3066,7 +3048,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE JOHANNA ',
       IdNumber: '5103280526085',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -3074,7 +3056,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHANANA PATRICK ',
       IdNumber: '4402125193080',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -3082,7 +3064,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOSEPH OGOPOLENG ',
       IdNumber: '5004085220082',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -3090,7 +3072,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MORUBISI MOJAKGOLO',
       IdNumber: '4306295137084',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -3098,7 +3080,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELIZABETH MANTSHO ',
       IdNumber: '6311101159080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3106,7 +3088,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE RASHIDA ',
       IdNumber: '9206290870082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3114,7 +3096,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASABATHA JONATHA ',
       IdNumber: '9709210528086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3122,7 +3104,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSELANE JEANETT MERE',
       IdNumber: '6411150541087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3130,7 +3112,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TEBOGO BERNARD ',
       IdNumber: '7312115702088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3138,7 +3120,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'THULAGANYO SERIA ',
       IdNumber: '7010200353086',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -3146,7 +3128,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'EMELDER KEBOGILE ',
       IdNumber: '7211150587083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3154,7 +3136,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'EVELYN DITSHEGO',
       IdNumber: '7504030643088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3162,7 +3144,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MODIEGI JOYCE PITSO',
       IdNumber: '6204290068081',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -3170,7 +3152,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LESEGO ALVINAH ',
       IdNumber: '7907060669081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3178,7 +3160,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOIPELO TOKONG',
       IdNumber: '8710220572081',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -3186,7 +3168,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BABA PEGGY BOKOTE',
       IdNumber: '9605221086082',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -3194,7 +3176,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'REFILWE MPOMELA',
       IdNumber: '9510280608083',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -3202,7 +3184,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSIMANEOTSILE ',
       IdNumber: '8111035710083',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -3210,7 +3192,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KENEILWE GAOBODIWE',
       IdNumber: '7804010788089',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -3218,7 +3200,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SETSHEGENG MONGALE',
       IdNumber: '9412240539088',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -3226,7 +3208,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'IKGOMOTSENG BROWN',
       IdNumber: '8101160491088',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -3234,7 +3216,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'VICTORIA MOTLHANKE',
       IdNumber: '9302130454086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3242,7 +3224,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ITEMOGENG MOKOTO',
       IdNumber: '7806130893087',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -3250,7 +3232,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOIPELO LORAINE ',
       IdNumber: '8904230672086',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -3258,7 +3240,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MARIA MODISAOTSILE',
       IdNumber: '6912111011086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3266,7 +3248,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADIMO ADRINA ',
       IdNumber: '9406010184083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3274,7 +3256,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'AARON MOGAMEDI',
       IdNumber: '7005235611086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3282,7 +3264,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOTSHEDISI SEETELO',
       IdNumber: '9408020677080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3290,7 +3272,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEGOMODITSWE DIPONE',
       IdNumber: '7704041516089',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -3298,7 +3280,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'CONSTANCE BAARDMAN',
       IdNumber: '7609070761086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3306,7 +3288,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ANNAH GAUTILWE',
       IdNumber: '7007161018088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3314,7 +3296,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KADIMO NELLY NGAKE',
       IdNumber: '6803251055084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3322,7 +3304,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOITUMELO DIKOKO',
       IdNumber: '8404250830086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3330,7 +3312,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TUMELO TERRANCE ',
       IdNumber: '9206285696088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3338,7 +3320,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOYCE SEDDIGENG',
       IdNumber: '6611300743083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3346,7 +3328,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAKEMPE SINAH ',
       IdNumber: '5704110883081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3354,7 +3336,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSELANE JEANETT MERE',
       IdNumber: '6411150541087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3362,7 +3344,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEBITSAMANG DITSHEGO',
       IdNumber: '9912281238086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3370,7 +3352,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KENEILWE SEODIGENG',
       IdNumber: '4506060566082',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -3378,7 +3360,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OMPHOMETSE JOSEPH ',
       IdNumber: '6603126090088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3386,7 +3368,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOSEPH TSHIPO',
       IdNumber: '7904295477083',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -3394,7 +3376,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ROSE SEWAGODIMO',
       IdNumber: '8406070971081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3402,7 +3384,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PHILADELPHIA ',
       IdNumber: '7212241565088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3410,7 +3392,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MPHO PAMPOEN',
       IdNumber: '8508250901083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3418,7 +3400,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEAMOGETSE RAOBONE',
       IdNumber: '8903050636080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3426,7 +3408,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OMPAPALETSE ',
       IdNumber: '9008060795089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3434,7 +3416,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LEISA LOUW',
       IdNumber: '6812050864083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3442,7 +3424,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ITUMELENG SERURUBELE',
       IdNumber: '6005055213089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3450,7 +3432,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PATRICK MOKOTO',
       IdNumber: '8709105723082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3458,7 +3440,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'AMOS TEBOGO MOAGI',
       IdNumber: '8004106103082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3466,7 +3448,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MASEGO MOGAMEDI',
       IdNumber: '301311164083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3474,7 +3456,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'THABANG MORESEKAO',
       IdNumber: '9202235693085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3482,7 +3464,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'REFILWE KGOSIEMANG',
       IdNumber: '9007151056088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3490,7 +3472,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MARGRET MQANDULI',
       IdNumber: '5206030960080',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -3498,7 +3480,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TUMELO MOLATOWAGAE',
       IdNumber: '8502220581083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3506,7 +3488,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GABATSHEPIWE ',
       IdNumber: '7907140373084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3514,7 +3496,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEITLHETSEMANG TSHILO',
       IdNumber: '7404280598084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3522,7 +3504,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OMPOLOKILE JASONE',
       IdNumber: '7206295757088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3530,7 +3512,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LIESBET MOAGI',
       IdNumber: '9012150318083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3538,7 +3520,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LESEDI PUOENG',
       IdNumber: '8912031207085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3546,7 +3528,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOTSHEDISI SEETELO',
       IdNumber: '9408020677080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3554,7 +3536,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LERATO MOKWATSI',
       IdNumber: '7906100546085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3562,7 +3544,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEODUTSE KENEKENE',
       IdNumber: '7212241526080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3570,7 +3552,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDIEMETSE MARRIAM ',
       IdNumber: '7008151309081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3578,7 +3560,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'IRENE TSHIBITI',
       IdNumber: '7706021182089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3586,7 +3568,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'IRENE TSHIBITI',
       IdNumber: '7706021182089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3594,7 +3576,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ONALENNA BOOYSEN',
       IdNumber: '9508251140086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3602,7 +3584,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MERRIAM PHETLHANE',
       IdNumber: '7109300096080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3610,7 +3592,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOIPELO KOROPE',
       IdNumber: '9705301027087',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -3618,7 +3600,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'VICTORIA MOTLHANKE',
       IdNumber: '9302130454086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3626,7 +3608,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'WILLIAM MAQANDELA',
       IdNumber: '6209175978080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3634,7 +3616,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ELIZABETH MANTSHO ',
       IdNumber: '6311101159080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3642,7 +3624,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOIKANGO MARUMO',
       IdNumber: '5604075880082',
       inception: '10/1/21',
-      premium: 'R98.00',
+      premium: '98.00',
       cover: 'R10,000.00',
     },
     {
@@ -3650,7 +3632,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KGOSIEMANG PIET ',
       IdNumber: '6911025786080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3658,7 +3640,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SARA MOGAMEDI',
       IdNumber: '7307220224085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3666,7 +3648,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SARA MOGAMEDI',
       IdNumber: '7307220224085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3674,7 +3656,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ONTHEEDITSE ',
       IdNumber: '9811020374089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3682,7 +3664,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAGRET MOENG',
       IdNumber: '5103290605085',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -3690,7 +3672,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEADIMILWE MOGALE',
       IdNumber: '8409190512082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3698,7 +3680,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BERTINA NKATSWANG',
       IdNumber: '8711020925081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3706,7 +3688,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JANE OTSWELANG',
       IdNumber: '8208210954088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3714,7 +3696,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'OTSILE METSWI',
       IdNumber: '6504195811083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3722,7 +3704,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDITLWAETSE DIPHATSE',
       IdNumber: '9004010286089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3730,7 +3712,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAIKUTLO MALEHO',
       IdNumber: '7911270997084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3738,7 +3720,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDINETSE DORA AGOSI',
       IdNumber: '7809130323089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3746,7 +3728,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEBITSAMANG MOOLISA',
       IdNumber: '7111280294081',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -3754,7 +3736,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDIEMETSE RAMOSHE',
       IdNumber: '6705070710080',
       inception: '10/1/21',
-      premium: 'R138.00',
+      premium: '138.00',
       cover: 'R15,000.00',
     },
     {
@@ -3762,7 +3744,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MALEBOGO RAMOSHE',
       IdNumber: '9005030917082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3770,7 +3752,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOBOILEMANG MABOTE',
       IdNumber: '3904270379084',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -3778,7 +3760,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDITLWAETSE DITSHEGO',
       IdNumber: '8011070886089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3786,7 +3768,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MATSHIDISO ',
       IdNumber: '9207030745089',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -3794,7 +3776,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEKEGILE MATSHELO',
       IdNumber: '6410060885089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3802,7 +3784,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'ROBINAH MATWA',
       IdNumber: '5111120279088',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -3810,7 +3792,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'WELLMINA OLIFANT',
       IdNumber: '5409220841082',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -3818,7 +3800,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'STOFFEL BUIES',
       IdNumber: '7909286003087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3826,7 +3808,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BOINEELO KHUSKA',
       IdNumber: '9901220749089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3834,7 +3816,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE PHEMELO',
       IdNumber: '6412205988083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3842,7 +3824,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'AMOS TEBOGO MOAGI',
       IdNumber: '8004106103082',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -3850,7 +3832,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAPHEHO SELOTLEGO',
       IdNumber: '7407110811080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3858,7 +3840,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'HILDA TSABANGWE',
       IdNumber: '7308060872082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3866,7 +3848,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TINKANE NTLOAKHUMO',
       IdNumber: '4904245469084',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -3874,7 +3856,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GRACE DRINKWATER',
       IdNumber: '7508260914085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3882,7 +3864,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SANIKI GAOJAKEIWE',
       IdNumber: '4806060298086',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -3890,7 +3872,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOTLALEPULE MAROPE',
       IdNumber: '4209110461087',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -3898,7 +3880,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MADINALEDI MAROPE',
       IdNumber: '9107280788088',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -3906,7 +3888,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEMORATILE MOPALAMI',
       IdNumber: '9210165177086',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -3914,7 +3896,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOLAODI SEBESHO',
       IdNumber: '7808285689088',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -3922,7 +3904,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEREDITSE GABONEO',
       IdNumber: '9506260923088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3930,7 +3912,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MERRIAM MATWA',
       IdNumber: '7510280307084',
       inception: '10/1/21',
-      premium: 'R60.00',
+      premium: '60.00',
       cover: 'R15,000.00',
     },
     {
@@ -3938,7 +3920,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MATSELANE GABONEO',
       IdNumber: '6008100684080',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3946,7 +3928,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'NTOZINI SEHUBA',
       IdNumber: '6912130400088',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -3954,7 +3936,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PHATSHIMO MAROANE',
       IdNumber: '9304040592088',
       inception: '10/1/21',
-      premium: 'R40.00',
+      premium: '40.00',
       cover: 'R10,000.00',
     },
     {
@@ -3962,7 +3944,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MARIA MODISAOTSILE',
       IdNumber: '6912111011086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3970,7 +3952,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'VICTORIA MONGALE',
       IdNumber: '7505251176088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3978,7 +3960,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MPHO MOTSHELE',
       IdNumber: '8805160517086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3986,7 +3968,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHIAMO SELOMI',
       IdNumber: '7801015832086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -3994,7 +3976,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBILEMANG LUCAS',
       IdNumber: '8502191023081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4002,7 +3984,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOKWENE MAERMAN',
       IdNumber: '5712040767084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4010,7 +3992,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDIDIMETSE TSHIBITHI',
       IdNumber: '7112251305088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4018,7 +4000,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBILEMANG LUCAS',
       IdNumber: '8502191023081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4026,7 +4008,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE DIPHAE',
       IdNumber: '7911301100088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4034,7 +4016,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'NTHABISENG SETUTI',
       IdNumber: '9007040893089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4042,7 +4024,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEOLEBOGILE KATLHOLO',
       IdNumber: '8010250516086',
       inception: '10/1/21',
-      premium: 'R121.00',
+      premium: '121.00',
       cover: 'R30,000.00',
     },
     {
@@ -4050,7 +4032,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEDIBONE MODUKANELE',
       IdNumber: '7612251975087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4058,7 +4040,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GEORGE SITASE',
       IdNumber: '8505165729088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4066,7 +4048,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GASEGOMOTSE ',
       IdNumber: '9011260996085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4074,7 +4056,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAJANE LESHOWE',
       IdNumber: '6809141035087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4082,7 +4064,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MANGANENG ',
       IdNumber: '5510160768084',
       inception: '10/1/21',
-      premium: 'R45.00',
+      premium: '45.00',
       cover: 'R10,000.00',
     },
     {
@@ -4090,7 +4072,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JANE OTSWELANG',
       IdNumber: '8208210954088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4098,7 +4080,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MARIA MAROKE',
       IdNumber: '6011230860083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4106,7 +4088,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PATRICIA SEELO',
       IdNumber: '6308280813081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4114,7 +4096,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LESEGO MMEREKI',
       IdNumber: '8607120221084',
       inception: '10/1/21',
-      premium: 'R275.00',
+      premium: '275.00',
       cover: 'R30,000.00',
     },
     {
@@ -4122,7 +4104,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KUKI MOTHUPI',
       IdNumber: '7906161217089',
       inception: '10/1/21',
-      premium: 'R75.00',
+      premium: '75.00',
       cover: 'R30,000.00',
     },
     {
@@ -4130,7 +4112,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE MEBALO',
       IdNumber: '7202010966088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4138,7 +4120,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KESENEILWE SIBE',
       IdNumber: '6509030934081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4146,7 +4128,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SEMAKALENG ',
       IdNumber: '8611110570088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4154,7 +4136,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAGGIE PHOKO',
       IdNumber: '6706180752087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4162,7 +4144,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'BAITSHEPI KANYANE',
       IdNumber: '6011170818083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4170,7 +4152,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEALEBOGA MOGOROSI',
       IdNumber: '6206205991083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4178,7 +4160,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LEBOTSHANE MAAPE',
       IdNumber: '6110220691084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4186,7 +4168,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MAMPATSANA CHABE',
       IdNumber: '6212251197088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4194,7 +4176,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADISE KGEE ',
       IdNumber: '8312010537083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4202,7 +4184,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SYLVIA DYONKI',
       IdNumber: '8007090775088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4210,7 +4192,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEAKESITSWE SETSILE',
       IdNumber: '6912050802081',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4218,7 +4200,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'PULENG SEBOCO',
       IdNumber: '8311250693085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4226,7 +4208,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEALEBOGA ',
       IdNumber: '8908190719084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4234,7 +4216,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEINETSE GAOTHAELWE',
       IdNumber: '5612040922087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4242,7 +4224,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOREETSENG MOSESANE',
       IdNumber: '8201090476082',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4250,7 +4232,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEHELETSWE KOROPE',
       IdNumber: '4110160123082',
       inception: '10/1/21',
-      premium: 'R88.00',
+      premium: '88.00',
       cover: 'R30,000.00',
     },
     {
@@ -4258,7 +4240,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOTLHABANI ',
       IdNumber: '4801165435089',
       inception: '10/1/21',
-      premium: 'R44.00',
+      premium: '44.00',
       cover: 'R15,000.00',
     },
     {
@@ -4266,7 +4248,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TSHIDI TWASING',
       IdNumber: '6105140311086',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -4274,7 +4256,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DIRAAMANG GANABO',
       IdNumber: '6905080559085',
       inception: '10/1/21',
-      premium: 'R184.00',
+      premium: '184.00',
       cover: 'R20,000.00',
     },
     {
@@ -4282,7 +4264,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GOITSEMANG TOKONG',
       IdNumber: '6909040101087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4290,7 +4272,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'GILBERT WESI',
       IdNumber: '6408215202085',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -4298,7 +4280,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'TANEELE PITSO',
       IdNumber: '5109045218082',
       inception: '10/1/21',
-      premium: 'R29.00',
+      premium: '29.00',
       cover: 'R10,000.00',
     },
     {
@@ -4306,7 +4288,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MOSADITLOTLO BAKAI',
       IdNumber: '5803250284082',
       inception: '10/1/21',
-      premium: 'R25.00',
+      premium: '25.00',
       cover: 'R10,000.00',
     },
     {
@@ -4314,7 +4296,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MIIRRIAM SEELO',
       IdNumber: '6805290694088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4322,7 +4304,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'DINEO IPELENG',
       IdNumber: '7607280851085',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4330,7 +4312,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'SIBONGIILE LESHOEE',
       IdNumber: '6904230354083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4338,7 +4320,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOSEPHINE KEOBETSENG',
       IdNumber: '7612270643088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4346,7 +4328,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KESHEBILENG SEBE',
       IdNumber: '7701300683089',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4354,7 +4336,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KEITUMETSE BANTOBETSE',
       IdNumber: '8206120632083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4362,7 +4344,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'VIRGINIA SEELO',
       IdNumber: '7812160733086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4370,7 +4352,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LORATO TEHEBEN',
       IdNumber: '8909200886087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4378,7 +4360,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'VICTORIA NGAKE',
       IdNumber: '8011251270087',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4386,7 +4368,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MONIMANG ',
       IdNumber: '6403031582083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4394,7 +4376,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'VIRGINIA SEELO',
       IdNumber: '7812160733086',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4402,7 +4384,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'LEISA LOUW',
       IdNumber: '6812050864083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4410,7 +4392,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'JOHANNAH MATHAPELO KGOPODIMETSE',
       IdNumber: '9806260823084',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4418,7 +4400,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'KELEBOGILE GLORIA GASEITSIWE',
       IdNumber: '8206190547088',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
     {
@@ -4426,7 +4408,7 @@ export default function WriteToCloudFirestore() {
       fullName: 'MARIA MAROKE',
       IdNumber: '6011230860083',
       inception: '10/1/21',
-      premium: 'R92.00',
+      premium: '92.00',
       cover: 'R10,000.00',
     },
   ];
@@ -4454,12 +4436,12 @@ export default function WriteToCloudFirestore() {
   return (
     <div>
       {/* <button
-      type="submit"
-      className="bg-sky-400 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out hover:bg-orange-primary transform hover:-translate-x hover:scale-105"
-      onClick={jsonToFirestore}
-    >
-      send jason to firestore
-    </button> */}
+        type="submit"
+        className="bg-sky-400 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out hover:bg-orange-primary transform hover:-translate-x hover:scale-105"
+        onClick={jsonToFirestore}
+      >
+        send jason to firestore
+      </button> */}
     </div>
   );
 }

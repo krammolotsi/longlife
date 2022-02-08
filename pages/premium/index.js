@@ -1,13 +1,25 @@
 import React from 'react';
 import { Fragment } from 'react';
-import NewPolicyForm from '../../components/NewPolicyForm';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
 import InfoSlider from '../../components/InfoSlider';
-import PolicyList from '../../components/PolicyList';
+import PremiumPayment from '../../components/PremiumPayment';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../../firebase';
 function Premiums() {
-  function addNewPolicyHandler(enteredPolicyData) {
-    console.log(enteredPolicyData);
+  function addNewPremiumPaymentHandler(enteredPolicyData) {
+    const sendData = async () => {
+      try {
+        const docRef = await addDoc(
+          collection(db, 'premiums'),
+          enteredPolicyData
+        );
+        console.log('Document written with ID: ', docRef.id);
+      } catch (e) {
+        console.error('Error adding document: ', e);
+      }
+    };
+    sendData();
   }
   return (
     <div className="h-screen">
@@ -17,18 +29,9 @@ function Premiums() {
       </Head>
       <Layout
         children={
-          <>
-            <a href="https://www.payfast.co.za/eng/process?cmd=_paynow&amp;receiver=19033454&amp;item_name=R150&amp;item_description=Testing&amp;amount=150.00&amp;return_url=http%3A%2F%2Fmalekanefoundation.org%2F&amp;cancel_url=http%3A%2F%2Fmalekanefoundation.org%2F">
-              <img
-                src="https://www.payfast.co.za/images/buttons/light-small-paynow.png"
-                width="165"
-                height="36"
-                alt="Pay"
-                title="Pay Now with PayFast"
-              />
-            </a>
-          </>
+          <PremiumPayment onAddPremiumPayment={addNewPremiumPaymentHandler} />
         }
+        infoSlider={<InfoSlider />}
       />
     </div>
   );

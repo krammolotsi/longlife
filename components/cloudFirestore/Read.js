@@ -2,7 +2,7 @@ import { collection, query, where, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { useState, useEffect } from 'react';
 import ClientProfile from '../ClientProfile';
-import firebase from '/firebase';
+
 export default function ReadToCloudFirestore(props) {
   //read from database
   const [clients, setClients] = useState([]);
