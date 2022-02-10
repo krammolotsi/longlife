@@ -65,8 +65,7 @@ function Tools(props) {
                 className="w-10 h-10 rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400 focus:ring-offset-white"
               >
                 <img
-                  // src={props.session}
-                  src={logo}
+                  src={props.session}
                   alt=""
                   className="w-10 h-10 object-cover"
                 />
@@ -131,4 +130,3 @@ function Tools(props) {
 }
 
 export default Tools;
-
