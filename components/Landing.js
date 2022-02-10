@@ -60,8 +60,6 @@ export default function Landing() {
                     <p className="mt-2 mb-4 text-gray-600">
                       Divide details about your product or agency work into
                       parts. A paragraph describing a feature will be enough.
-                      <br />
-                      <Link href="/auth/signin">Login</Link>
                     </p>
                   </div>
                 </div>
@@ -119,23 +117,23 @@ export default function Landing() {
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
                   Working with us is a pleasure
                 </h3>
-                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-800">
                   Don't let your uses guess by attaching tooltips and popoves to
                   any element. Just make sure you enable them first via
                   JavaScript.
                 </p>
-                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
                   The kit comes with three pre-built pages to help you get
                   started faster. You can change the text and images and you're
                   good to go. Just make sure you enable them first via
                   JavaScript.
                 </p>
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                  className="font-bold text-gray-800 mt-8"
+                <Link
+                  href="/auth/signin"
+                  className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800"
                 >
-                  Check Tailwind Starter Kit!
-                </a>
+                  Login
+                </Link>
               </div>
 
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
