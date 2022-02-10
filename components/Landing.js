@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Image from 'next/image';
 import { Fragment } from 'react';
+import Link from 'next/link';
 //import Afro from '../public/afro-family.';
 import afro from '../public/longlifelogo.png';
 export default function Landing() {
@@ -59,6 +60,8 @@ export default function Landing() {
                     <p className="mt-2 mb-4 text-gray-600">
                       Divide details about your product or agency work into
                       parts. A paragraph describing a feature will be enough.
+                      <br />
+                      <Link href="/auth/signin">Login</Link>
                     </p>
                   </div>
                 </div>
