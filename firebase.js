@@ -19,8 +19,8 @@ const clientCredentials = {
 };
 
 // Initialize Firebase
-const app = !getApps().length ? initializeApp(clientCredentials) : getApp();
-//const app = initializeApp(clientCredentials);
+//const app = !getApps().length ? initializeApp(clientCredentials) : getApp();
+const app = initializeApp(clientCredentials);
 
 const db = getFirestore(app);
 
