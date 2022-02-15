@@ -36,14 +36,13 @@ function MainNav() {
         <a className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-xl text-white hover:bg-white hover:opacity-100 hover:text-sky-400 transform md:hover:translate-x-8 duration-300 hover:shadow-xl focus:outline-none md:focus:translate-x-8 focus:bg-white focus:text-sky-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
             viewBox="0 0 20 20"
             fill="currentColor"
-            className="h-6 w-6"
           >
-            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
             <path
               fill-rule="evenodd"
-              d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+              d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"
               clip-rule="evenodd"
             />
           </svg>

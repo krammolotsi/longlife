@@ -90,7 +90,7 @@ function InfoSlider() {
                 New Business
               </span>
               <span className="font-semibold text-xl md:text-2xl text-gray-dark">
-                320
+                0
               </span>
             </div>
           </div>

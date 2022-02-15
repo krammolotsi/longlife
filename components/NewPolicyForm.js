@@ -3,14 +3,12 @@ function NewPolicyForm(props) {
   const [fullName, setFullName] = useState('');
   const [idNum, setidNum] = useState('');
   const [inception, setInception] = useState('');
-  const [policyNumber, setPolicyNumber] = useState('');
   const [premium, setpremium] = useState('');
   const [cover, setCover] = useState('');
 
   const isInvalid =
     fullName === '' ||
     idNum === '' ||
-    policyNumber === '' ||
     cover === '' ||
     inception === '' ||
     premium === '';
@@ -23,7 +21,6 @@ function NewPolicyForm(props) {
         fullName: fullName,
         inception: inception,
         IdNum: idNum,
-        policyNumber: policyNumber,
         premium: premium,
         cover: cover,
       };
@@ -34,7 +31,6 @@ function NewPolicyForm(props) {
       setidNum('');
       setInception('');
       setpremium('');
-      setPolicyNumber('');
       setCover('');
       setError(error.message);
     }
@@ -48,10 +44,7 @@ function NewPolicyForm(props) {
           <div className="card bg-sky-400 shadow-lg  w-full h-full rounded-3xl absolute animate-rotate"></div>
           <div className="card bg-orange-primary shadow-lg  w-full h-full rounded-3xl absolute  animate-rotate_neg"></div>
           <div className="relative w-full rounded-3xl  px-6 py-4 bg-gray-light shadow-md">
-            <label
-              for=""
-              className="block mt-3 text-sm text-gray-700 text-center font-semibold"
-            >
+            <label className="block mt-3 text-sm text-gray-700 text-center font-semibold">
               Add New Policy
             </label>
             <form onSubmit={submitHandler} method="POST" className="mt-10">
@@ -89,15 +82,6 @@ function NewPolicyForm(props) {
                   className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
                   onChange={({ target }) => setpremium(target.value)}
                   value={premium}
-                />
-              </div>
-              <div className="mt-7">
-                <input
-                  type="text"
-                  placeholder="Policy Number"
-                  className="mt-1 block w-full p-3 border-none bg-white h-11 rounded-xl shadow-lg placeholder-gray-dark hover:bg-blue-light focus:ring-2 focus:ring-blue-dark"
-                  onChange={({ target }) => setPolicyNumber(target.value)}
-                  value={policyNumber}
                 />
               </div>
               <div className="mt-7">
