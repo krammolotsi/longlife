@@ -173,7 +173,7 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="relative py-20">
+        {/* <section className="relative py-20">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style={{ height: '80px' }}
@@ -247,7 +247,7 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="pb-20 relative block bg-gray-900">
           <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
