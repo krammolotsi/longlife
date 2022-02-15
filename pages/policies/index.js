@@ -16,7 +16,7 @@ function Policies() {
 
       {/* business progress for the monthly */}
 
-      {/* polices added */}
+      {/* last added shuping */}
     </div>
   );
 }
