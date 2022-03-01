@@ -4,6 +4,7 @@ import { db } from '../firebase';
 import { useState, useEffect } from 'react';
 import CalculateTotalMonthlyPremiums from './cloudFirestore/CalculateTotalMonthlyPremiums';
 import CalculateOutstandingPremiums from './cloudFirestore/CalculateOutstandingPremiums';
+import CalculatePreviousMonth from './cloudFirestore/CalculatePreviousMonth';
 
 function InfoSlider() {
   return (
@@ -67,7 +68,7 @@ function InfoSlider() {
             </div>
           </div>
         </Link>
-        <Link href="/premium/newbusiness">
+        <Link href="/premium/previousmonth">
           <div className="bg-white w-1/3 shadow-md border-gray-light hover:text-orange-primary hover:bg-orange-primary rounded-xl flex flex-col md:flex-row items-center px-3 py-5 md:p-5 space-x-0 md:space-x-5">
             <div className="bg-white p-2 rounded-lg text-sky-400 w-full md:w-auto hover:text-white hover:bg-orange-dark">
               <svg
@@ -87,10 +88,10 @@ function InfoSlider() {
             </div>
             <div>
               <span className="font-semibold block uppercase text-xs text-gray-dark tracking-wider">
-                New Business
+                Previous Month
               </span>
               <span className="font-semibold text-xl md:text-2xl text-gray-dark">
-                0
+                <CalculatePreviousMonth />
               </span>
             </div>
           </div>

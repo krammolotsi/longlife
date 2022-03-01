@@ -16,13 +16,7 @@ function PolicyHolder(props) {
             <br />
             {props.IdNumber}
           </p>
-          <p className="leading-normal truncate text-gray-dark">
-            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
-              Inception:
-            </span>
-            <br />
-            {props.inception}
-          </p>
+
           <p className="leading-normal truncate text-gray-dark">
             <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
               Policy Number:
@@ -36,13 +30,6 @@ function PolicyHolder(props) {
             </span>
             <br />
             {props.premium}
-          </p>
-          <p className="leading-normal truncate text-gray-dark">
-            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
-              Cover:
-            </span>
-            <br />
-            {props.cover}
           </p>
         </div>
         <div className="block bg-gray-light text-center p-2">

@@ -8,7 +8,7 @@ function PolicyPage() {
   const router = useRouter();
 
   const policyID = router.query.policyId;
-  console.log(policyID);
+  console.log('got key' + policyID);
   return (
     <div className="h-screen">
       <Head>

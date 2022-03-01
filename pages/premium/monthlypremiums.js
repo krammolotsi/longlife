@@ -11,7 +11,10 @@ function MonthlyPayments() {
         <title>Long Life Funeral</title>
         <link rel="icon" href="/longlifelogo.png" />
       </Head>
-      <Layout children={<ReadMonthlyPremiums />} infoSlider={<InfoSlider />} />
+      <Layout
+        children={<ReadMonthlyPremiums number="1" />}
+        infoSlider={<InfoSlider />}
+      />
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function ReadToCloudFirestore(props) {
   const [clients, setClients] = useState([]);
   const q = query(
     collection(db, 'clients'),
-    where('IdNumber', '==', props.IdNumber)
+    where('idNumber', '==', props.IdNumber)
   );
 
   //query
@@ -21,6 +21,7 @@ export default function ReadToCloudFirestore(props) {
       // console.log(doc.id, ' => ', doc.data());
     });
     setClients(clientCollection);
+    console.log(clientCollection);
   }
 
   useEffect(() => {
@@ -33,12 +34,10 @@ export default function ReadToCloudFirestore(props) {
         <ClientProfile
           key={policyHolder.policyNumber}
           id={policyHolder.id}
-          fullName={policyHolder.fullName}
-          IdNumber={policyHolder.IdNumber}
-          inception={policyHolder.inception}
+          fullName={policyHolder.name + policyHolder.surname}
+          IdNumber={policyHolder.idNumber}
           premium={policyHolder.premium}
           policyNumber={policyHolder.policyNumber}
-          cover={policyHolder.cover}
         />
       ))}
     </div>

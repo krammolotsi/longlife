@@ -16,13 +16,6 @@ function ClientProfile(props) {
           </p>
           <p className="leading-normal truncate text-gray-dark">
             <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
-              Inception:
-            </span>
-            <br />
-            {props.inception}
-          </p>
-          <p className="leading-normal truncate text-gray-dark">
-            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
               Policy Number:
             </span>
             <br />
@@ -34,13 +27,6 @@ function ClientProfile(props) {
             </span>
             <br />
             {props.premium}
-          </p>
-          <p className="leading-normal truncate text-gray-dark">
-            <span className="mb-3 text-xl truncate font-semibold tracking-tight text-gray-dark">
-              Cover:
-            </span>
-            <br />
-            {props.cover}
           </p>
         </div>
       </div>

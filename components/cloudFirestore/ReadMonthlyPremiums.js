@@ -2,9 +2,9 @@ import { collection, query, where, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { useState, useEffect } from 'react';
 import Payments from '../Payments';
-function ReadMonthlyPremiums() {
+function ReadMonthlyPremiums(props) {
   var newDate = new Date();
-  var currentMonth = newDate.getMonth() + 1;
+  var currentMonth = newDate.getMonth() + parseInt(props.number);
   const [payments, setPayments] = useState([]);
   const q = query(
     collection(db, 'premiums'),
@@ -16,22 +16,8 @@ function ReadMonthlyPremiums() {
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
       paymentCollection.push(doc.data());
-      // console.log(doc.id, ' => ', doc.data());
     });
     setPayments(paymentCollection);
-    // paymentCollection.forEach((doc) => {
-    //   paymentTotal.push(doc.paymentAmount);
-    //   console.log('Payment total is ' + paymentTotal);
-    //   // const sum = paymentTotal.reduce((partialSum, a) => partialSum + a, 0);
-    // });
-
-    // var sum = 0;
-    // var int;
-    // for (let i = 0; i < paymentTotal.length; i++) {
-    //   int = paymentTotal[i];
-    //   sum += parseInt(int);
-    // }
-    //  console.log('total sum is ' + sum);
   }
   useEffect(() => {
     getPayments();

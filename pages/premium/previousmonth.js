@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Layout from '../../components/Layout';
 import InfoSlider from '../../components/InfoSlider';
-function NewBusiness() {
+import ReadMonthlyPremiums from '../../components/cloudFirestore/ReadMonthlyPremiums';
+function PreviousMonth() {
   var newDate = new Date();
   var currentMonth = newDate.getMonth() + 1;
   var day = newDate.getDay();
@@ -14,17 +15,11 @@ function NewBusiness() {
         <link rel="icon" href="/longlifelogo.png" />
       </Head>
       <Layout
-        children={
-          <div>
-            <p>Day is {day}</p>
-            <p>Month is {currentMonth}</p>
-            <p>Year is {currentYear}</p>
-          </div>
-        }
+        children={<ReadMonthlyPremiums number="0" />}
         infoSlider={<InfoSlider />}
       />
     </div>
   );
 }
 
-export default NewBusiness;
+export default PreviousMonth;

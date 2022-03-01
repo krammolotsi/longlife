@@ -22,12 +22,10 @@ function PolicyList() {
         <PolicyHolder
           key={policyHolder.policyNumber}
           id={policyHolder.id}
-          fullName={policyHolder.fullName}
-          IdNumber={policyHolder.IdNumber}
-          inception={policyHolder.inception}
+          fullName={policyHolder.name + policyHolder.surname}
+          IdNumber={policyHolder.idNumber}
           premium={policyHolder.premium}
           policyNumber={policyHolder.policyNumber}
-          cover={policyHolder.cover}
         />
       ))}
     </div>
