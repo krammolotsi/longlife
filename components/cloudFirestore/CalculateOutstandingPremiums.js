@@ -54,7 +54,7 @@ function CalculateOutstandingPremiums() {
       sum += parseInt(int);
     }
     //calculate total
-    setInfoSliderOutstandingPremium(sumOfOutstandingPremiums - sum);
+    setInfoSliderOutstandingPremium(sumOfOutstandingPremiums * 2 - sum);
   }
   useEffect(() => {
     getOutstandingPremiums();
